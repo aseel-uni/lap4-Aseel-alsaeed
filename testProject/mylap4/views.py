@@ -6,6 +6,7 @@ def default(request):
     return HttpResponse("<h1> this is a site to calculate tax </h1>")
 
 #second page
+
 def calculate_tax(request, price):
     tax_rate = 0.15
     total_price = price + ( price * tax_rate )
