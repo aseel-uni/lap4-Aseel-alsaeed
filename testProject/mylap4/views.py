@@ -7,7 +7,7 @@ def default(request):
 
 
 def calculate_tax(request, price):
-    tax_rate = 0.15
+    tax_rate = 0.015
     total_price = price + ( price * tax_rate )
     return HttpResponse( f"<h1>The total price after tax is: {total_price} </h1> " )
 
